@@ -31,10 +31,10 @@ private $error;
         // $this->user = "webuser";
         // $this->password = "P@ssw0rd";
 
-        this->$host = "cosc360.ok.ubc.ca";  
-        this->$database = "db_28878544";
-        this->$user = "28878544";
-        this->$password = "28878544";
+        $this->host = "cosc360.ok.ubc.ca";  
+        $this->database = "db_28878544";
+        $this->user = "28878544";
+        $this->password = "28878544";
         $this->connection = mysqli_connect($this->host, $this->user, $this->password, $this->database);
         $this->error = mysqli_connect_error();
     }
