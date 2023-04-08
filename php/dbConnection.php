@@ -26,10 +26,16 @@ private $error;
 
     public function __construct()
     {
-        $this->host = "localhost";
-        $this->database = "project";
-        $this->user = "webuser";
-        $this->password = "P@ssw0rd";
+        // $this->host = "localhost";
+        // $this->database = "project";
+        // $this->user = "webuser";
+        // $this->password = "P@ssw0rd";
+
+        $this->host = "cosc360.ok.ubc.ca";
+        $this->database = "db_28878544";
+        $this->user = "28878544";
+        $this->password = "28878544";
+
 
         //$host = "cosc360.ok.ubc.ca";  this all
         //$database = "db_11505328";
