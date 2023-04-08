@@ -2,10 +2,23 @@
 <html>
     
 <head>
+  <link rel="stylesheet" href = "../css/reset.css"/>
+  <link rel="stylesheet" href="../css/masthead.css"/>
+  <link rel="stylesheet" href="../css/mainform.css"/>
+  <link rel ="stylsheet" href ="../css/menuphp.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
+    <header>
+      <h2>
+          THE GAMER'S DEN
+      </h2>
+      <img src="../images/logo.png" height="50px">
+    </header>
+
+
     <!-- add the page styling of masthead and logo -->
 
 <?php

@@ -44,7 +44,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_SESSION['userID'])){
         }
       
         mysqli_close($connection);
-        mysqli_free_result($result);
+        //mysqli_free_result($result);
         die;
 
       }

@@ -49,10 +49,7 @@ body {
     background-color: #66FCF1;
   }
 
-  #mainForm {
-    color: #0B0C10;
-    font-weight: 900;
-  }
+
   .forgot {
     position: relative;
     font-weight: 900;
@@ -105,3 +102,4 @@ body {
     flex-direction: column;
     margin-top: 20px;
   }
+

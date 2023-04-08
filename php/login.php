@@ -29,10 +29,9 @@ if(isset($_SESSION['userID'])){
 
   <nav>
       <ul class="list">
-          <li><a href="#Home">Home</a></li>
-          <li><a href="#Trending">Trending</a></li>
-          <li><a href="#Post">Make a Post</a></li>
-          <li><a href="#Manage">Account Management</a></li>
+          <li><a href="viewposttitles.php">Home</a></li>
+          <li><a href="makepost.php">Make a Post</a></li>
+          <li><a href="accmgmt.php">Account Management</a></li>
       </ul>
   </nav>
   <form method="post" action="processlogin.php" id="mainForm" >

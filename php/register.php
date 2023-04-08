@@ -2,7 +2,10 @@
 <html>
 <head>
 
+<link rel="stylesheet" href = "../css/reset.css"/>
 <link rel="stylesheet" href = "../css/register.css"/>
+<link rel="stylesheet" href = "../css/masthead.css"/>
+<link rel="stylesheet" href = "../css/mainform.css"/>
 
 <?php
 session_start();
@@ -48,14 +51,13 @@ if(isset($_SESSION['userID'])){
     <nav>
         <ul class="list">
             <li><a href="#Home">Home</a></li>
-            <li><a href="#Trending">Trending</a></li>
             <li><a href="#Post">Make a Post</a></li>
             <li><a href="#Manage">Account Management</a></li>
         </ul>
     </nav>
 
 <br>
-<form method="post" action="newuser.php" id="mainForm" >
+<form method="post" action="newuser.php" id="mainForm" enctype="multipart/form-data">
   First Name:<br>
   <input type="text" name="firstname" id="firstname" class="required">
   <br>
@@ -69,7 +71,7 @@ if(isset($_SESSION['userID'])){
   <input type="email" name="email" id="email" class="required">
   <br>
   Profile Photo:<br>
-  <input type="file" name="profile" id="profile">
+  <input type="file" name="newfile" id="newfile">
   <br>
   Short Bio:<br>
   <input type="text" name="bio" id="bio">
