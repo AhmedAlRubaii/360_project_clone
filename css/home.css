@@ -1,0 +1,160 @@
+
+body {
+  background-color: #0B0C10;
+  color: #C5C6C7;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+h2 {
+  margin: 0;
+}
+
+header img {
+  margin-top: 10px;
+}
+
+h2 {
+  color: #66FCF1;
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+nav {
+  display: flex;
+  background-color: #1F2833;
+  padding: 10px;
+  justify-content: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #C5C6C7;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+nav a:hover {
+  color: #66FCF1;
+}
+
+#main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+#latest, #right {
+  flex-basis: 48%;
+}
+
+#latest p {
+  line-height: 1.5;
+}
+
+#right h1 {
+  color: #C21858 ;
+  font-size: 1.5em;
+}
+
+#featured {
+  position: relative;
+}
+
+#featured figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #45A29E;
+  color: #C5C6C7;
+  padding: 10px;
+  width: 100%;
+  margin: 0;
+}
+
+#featured img.overlayed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+#upcoming {
+  background-color: #1F2833;
+  color: #C5C6C7;
+  padding: 10px;
+}
+
+#upcoming h2 {
+  color: #66FCF1;
+  font-size: 1.2em;
+}
+
+#upcoming p {
+  line-height: 1.5;
+}
+
+.right{
+  font-style: italic;
+  font-weight: 100;
+  text-underline-position: under;
+}
+.right a {
+  color: #C21858 /* default color */
+}
+
+.right a:visited {
+  color: #c3c3c3; /* visited color */
+}
+
+.right a:hover {
+  color: #57DCBE; /* hover color */
+}
+
+footer {
+  background-color: #1F2833;
+  color: #C5C6C7;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+footer a {
+  color: #C5C6C7;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #66FCF1;
+}
+
+
+/*
+#0B0C10
+#1F2833
+#C5C6C7
+#66FCF1
+#45A29E
+#C21858
+#c3c3c3
+*/

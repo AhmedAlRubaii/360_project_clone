@@ -1,0 +1,122 @@
+body {
+    background-color: #0B0C10;
+    color: #C5C6C7;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  form {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: #1F2833;
+    border-radius: 10px;
+    border: 2px solid black;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="password"],
+  form input[type="file"],
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #45A29E;
+    box-sizing: border-box;
+    height: 40px;
+    color: #0B0C10;
+    border: 2px solid black;
+    border-radius: 5px;
+
+  }
+  
+  form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #272AB0;
+    color: #0B0C10;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #276BB0;
+    
+  }
+  
+  form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  form input.error,
+  form textarea.error {
+    border: 2px solid #FF4136;
+  }
+  
+  form label.error {
+    color: #FF4136;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  form .success {
+    color: #66FCF1;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  nav {
+    display: flex;
+    background-color: #1F2833;
+    padding: 10px;
+    justify-content: center;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #C5C6C7;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  
+  nav a:hover {
+    color: #66FCF1;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  #mainForm {
+    color: #C5C6C7;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  

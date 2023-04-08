@@ -1,0 +1,67 @@
+
+<?php
+
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+
+    if(!empty($_POST["username"])){
+
+      $host = "localhost";
+      $database = "lab9";
+      $user = "webuser";
+      $password = "P@ssw0rd";
+
+      $connection = mysqli_connect($host, $user, $password, $database);
+
+      $error = mysqli_connect_error();
+
+      if($error != null){
+        $output = "<p>Unable to connect to database!</p>";
+        exit($output);
+      }
+      else{
+        $username = $_POST["username"];
+
+        $sql = "SELECT username,firstName,lastName,email,bio FROM users WHERE username like '%{$username}%';";
+
+        $result = mysqli_query($connection, $sql);
+        
+        if($row = $result->fetch_assoc()){
+            while($row = $result->fetch_assoc()){
+                echo $row['username'] . "   " . $row['firstName'] . "   " . $row['lastName'] . "    " . $row['email'] . "   " . $row['bio'] . "<a href=\"deleteuser.php?username={$row['username']}\"><button>delete this user</button></a>";
+                echo "<br>";
+            }
+
+        // echo $row['username'] . "   " . $row['firstName'] . "   " . $row['lastName'] . "    " . $row['email'] . "   " . $row['bio'];
+        // echo "<br>";
+        echo "<a href=\"../html/searchusername.html\">search another user by username</a>";
+        echo "<br>";
+        echo "<a href=\"adminhome.php\"><button>back to admin home page</button></a>";
+        echo "<br>";
+        echo "<a href=\"logout.php\"><button>logout</button></a>";
+          
+        }
+        else{
+            echo "user does not exist";
+            echo "<br>";
+            echo "<a href=\"../html/searchusername.html\">try to search again</a>";
+        }
+      
+        mysqli_close($connection);
+        die;
+
+      }
+
+     
+    }
+    else{
+        echo "A field was not set. Something went wrong :(";
+        echo "<br>";
+        echo "<a href=\"../html/searchusername.html\">try to search again</a>";
+    }
+}
+else
+  die("Something went wrong with post :(");
+
+
+?>
+
